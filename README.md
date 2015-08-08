@@ -71,16 +71,8 @@ If you want to **update** just follow steps 2 to 4<br>
 If you want to **reinstall** just follow steps 2 to 4 then copy your backed up customize folder to:<br> 
  `...\Counter-Strike Global Offensive\csgo\cfg\customize\` <br>
  
-There are different levels of configuration:<br>
-
-* level1 - game setting, config settings, static key binds<br>
-* level2 - advanced game settings (crosshair, radar)<br>
-* level3 - dynamic key binds<br>
-* level4 - low level config changes (radar zooom, crosshair nade)<br>
-* level5 - high level conifg changes<br>
-* levelA - `mode_[?]` static key binds<br>
-* levelB - `mode_[?]` dynamic key binds<br>
-* levelC - `mode_[?]` configuration <br>
+For a simple start only edit level1 files. Type **helpresources** in game console to get help.<br>
+folder: `...\Counter-Strike Global Offensive\csgo\cfg\customize\` <br>
  
 The most important config files are:
 
@@ -95,6 +87,21 @@ For the rest check out the files in the preconfigured folder, they are commented
 **Modes** (`mode_default`; `mode_demo`; `mode_training`) are ment to change your configuration (especially binds) optimized for the different ways you use the game (normal play, overwatch/demo, training) <br>
 **Dynamic binds** are there to allow you multiple uses of one key. (As long as a modifiere key (for me: ALT) is pressed key binds will change to something else.<br>
 **Variable binds** are there to toggle the bind of one key to something else with another key. 
+
+---------
+
+There are different levels of configuration:<br>
+* level1 - game setting, config settings, static key binds<br>
+* level2 - advanced game settings (crosshair, radar)<br>
+* level3 - dynamic key binds<br>
+* level4 - low level config changes (radar zooom, crosshair nade)<br>
+* level5 - high level conifg changes<br>
+
+`mode_[?]` config files
+
+* levelA - `mode_[?]` static key binds<br>
+* levelB - `mode_[?]` dynamic key binds<br>
+* levelC - `mode_[?]` configuration <br>
  
 To explain how the dynamic binds and the `mode_[?]` system in this config works i made this diagram:            
                                                                                                                     
@@ -181,6 +188,3 @@ To explain how the dynamic binds and the `mode_[?]` system in this config works 
 [www.nmlgaming.co.uk/index.php/updates/59-autoexec-help.html](https://www.nmlgaming.co.uk/index.php/updates/59-autoexec-help.h)
 
 **I'm sorry that these are incomplete!** - When I started this config it was 3 Lines long ;)
-
-                                                                                                                 
-                                                                                                                
