@@ -24,23 +24,23 @@ I highly recommend using an editor which supports text highlighting.<br>
 Notepad++ text highlight for CSGO .cfg files can be found here: [https://github.com/k3nnyfr/csgo#csgo-npp-language](https://github.com/k3nnyfr/csgo#csgo-npp-language "github.com/k3nnyfr/csgo#csgo-npp-language")<br> 
 I am using Sublime Text with: [github.com/aronj/CFGGameConfigurationSyntax](https://github.com/aronj/CFGGameConfigurationSyntax "github.com/aronj/CFGGameConfigurationSyntax") 
  
-**Be caureful** when first using this conifg, read through it, disable/enable or change what you dont like.<br> 
+**Be careful** when first using this conifg, read through it, disable/enable or change what you don't like.<br> 
 The config might do lots of unexpected stuff to your game.<br> 
-Don't use it if you're not willing to read thourgh it. Otherwise it might ruin the game for you! 
+Don't use it if you're not willing to read through it. Otherwise it might ruin the game for you! 
  
 I consider this config to **still be in beta**:<br> 
-I did some testing, but I couln't be botherd to try all combinations, etc.<br> 
+I did some testing, but I couldn't be bothered to try all combinations, etc.<br> 
 Please let me know if anything is not working or missing. (via github) <br>
 The preconfigured version is optimized for a german keyboard layout - unfortunately valve doesn't make an 
  international layout easy for me. (check: [redd.it/3f826h](https://redd.it/3f826h "redd.it/3f826h")) 
  
-The conifg is splittet and all custiomization can be achieved by editing files in this folder: 
+The conifg is split up and all custiomization can be achieved by editing files in this folder: 
  `...\Counter-Strike Global Offensive\csgo\cfg\customize\ `
 
 (for me: `\Steam\SteamApps\common\Counter-Strike Global Offensive\csgo\cfg\customize\`) 
  
 When you first install it please follow the next few steps.<br>
-They are here to make futer upadtes of this config easy and painless. (Without compromising your changes)
+They are here to make future updates of this config easy and painless. (Without compromising your changes)
 
 1. **Backup your: autoexec.cfg, crosshair, radar** if you changed any of this.
    
@@ -85,7 +85,7 @@ For the rest check out the files in the preconfigured folder, they are commented
  `...\Counter-Strike Global Offensive\csgo\cfg\customize\preconfigured\` 
 
 **Modes** (`mode_default`; `mode_demo`; `mode_training`) are ment to change your configuration (especially binds) optimized for the different ways you use the game (normal play, overwatch/demo, training) <br>
-**Dynamic binds** are there to allow you multiple uses of one key. (As long as a modifiere key (for me: ALT) is pressed key binds will change to something else.<br>
+**Dynamic binds** are there to allow you multiple uses of one key. (As long as a modifier key (for me: ALT) is pressed key binds will change to something else.<br>
 **Variable binds** are there to toggle the bind of one key to something else with another key. 
 
 ---------
@@ -94,7 +94,7 @@ There are different levels of configuration:<br>
 * level1 - game setting, config settings, static key binds<br>
 * level2 - advanced game settings (crosshair, radar)<br>
 * level3 - dynamic key binds<br>
-* level4 - low level config changes (radar zooom, crosshair nade)<br>
+* level4 - low level config changes (radar zoom, crosshair nade)<br>
 * level5 - high level conifg changes<br>
 
 `mode_[?]` config files
