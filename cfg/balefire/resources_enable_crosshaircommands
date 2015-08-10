@@ -1,0 +1,48 @@
+//╔════════════════════════════════════════════════════════════════════════╗
+//║                                                                        ║▒
+//║            ____            _           __   _                          ║▒
+//║           |  _ \          | |         / _| (_)                         ║▒
+//║           | |_) |   __ _  | |   ___  | |_   _   _ __    ___            ║▒
+//║           |  _ <   / _` | | |  / _ \ |  _| | | | '__|  / _ \           ║▒
+//║           | |_) | | (_| | | | |  __/ | |   | | | |    |  __/           ║▒
+//║           |____/   \__,_| |_|  \___| |_|   |_| |_|     \___|           ║▒
+//║                                                                        ║▒
+//║                                                                        ║▒
+//║                      ___   ___   _    ___    ___                       ║▒
+//║                     / __| / __| (_)  / __|  / _ \                      ║▒
+//║                    | (__  \__ \  _  | (_ | | (_) |                     ║▒
+//║                     \___| |___/ (_)  \___|  \___/                      ║▒
+//║                                                                        ║▒
+//║                            _           __   _                          ║▒
+//║                 __   ___  (_)  _ _    / _| (_)  __ _                   ║▒
+//║                / _| / _ \ | | | ' \  |  _| | | / _` |                  ║▒
+//║                \__| \___/ |_| |_||_| |_|   |_| \__, |                  ║▒
+//║                                                |___/                   ║▒
+//║                                                                        ║▒
+//╠════════════════════════════════════════════════════════════════════════╣▒
+//║ github: github.com/SirBalefire/cs-go-config                            ║▒
+//║ steam:  steamcommunity.com/id/balefire/                                ║▒
+//╚════════════════════════════════════════════════════════════════════════╝▒
+// ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+//┌────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────┐
+//│ +crosshair_[?] │ crosshair_gamedef - change crosshair to game default                                         │
+//└────────────────┤ crosshair_user    - crosshair to crosshairuser customize/level2_crosshair_user.cfg           │
+//                 │                                                                                              │
+//                 │ crosshair_default - change crosshair to crosshair_default (choosen via crosshair_default_[?] │
+//                 │                                                                                              │
+//                 │ +crosshair_nade               - nade crosshair, on release: crosshair_user                   │
+//                 │ +crosshair_nade_reload        - +crosshair_nade_user combinde with +reload                   │
+//                 └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  alias crosshair_gamedef "exec balefire/resources_crosshair_gamedefault"
+  alias crosshair_user    "exec customize/level2_crosshair_user"
+
+  alias crosshair_default_gamedef  "crosshair_gamedef; alias crosshair_default crosshair_gamedef"
+  alias crosshair_default_user     "crosshair_user   ; alias crosshair_default crosshair_user"
+  alias crosshair_default "crosshair_gamedef"
+
+  alias +crosshair_nade "+viewmodel_nade; exec customize/level4_crosshair_nade"
+  alias -crosshair_nade "-viewmodel_nade; crosshair_default"
+  alias +crosshair_nadeandreload "+crosshair_nade; +reload" 
+  alias -crosshair_nadeandreload "-crosshair_nade; -reload"
+  
