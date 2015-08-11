@@ -42,7 +42,7 @@ The conifg is split up and all custiomization can be achieved by editing files i
 When you first install it please follow the next few steps.<br>
 They are here to make future updates of this config easy and painless. (Without compromising your changes)
 
-1. **Backup your: autoexec.cfg, crosshair, radar** if you changed any of this.
+1. **Backup your: autoexec.cfg, crosshair, radar, viewmodel** if you changed any of this.
    
 2. Copy the "cfg" directory to the following directory:<br>
    `...\Counter-Strike Global Offensive\csgo\`<br>
@@ -56,8 +56,9 @@ They are here to make future updates of this config easy and painless. (Without 
 `...\Counter-Strike Global Offensive\csgo\cfg\config.cfg` 
  
 5. Copy all files from:<br> 
-`...\Counter-Strike Global Offensive\csgo\cfg\customize\empty\`<br> 
-or (if you want to use the preconfigured version)<br> 
+`...\Counter-Strike Global Offensive\csgo\cfg\customize\simple\`<br> 
+or if you want to use the preconfigured version from:<br> 
+(Be careful with this one! It is ment to be an example.)<br>
 `...\Counter-Strike Global Offensive\csgo\cfg\customize\preconfigured_german\`<br> 
 to:<br> 
 `...\Counter-Strike Global Offensive\csgo\cfg\customize\`<br> 
@@ -71,28 +72,32 @@ If you want to **update** just follow steps 2 to 4<br>
 If you want to **reinstall** just follow steps 2 to 4 then copy your backed up customize folder to:<br> 
  `...\Counter-Strike Global Offensive\csgo\cfg\customize\` <br>
  
-For a simple start only edit level1 files. Type **helpresources** in game console to get help.<br>
-folder: `...\Counter-Strike Global Offensive\csgo\cfg\customize\` <br>
+For a simple start use the simle folder in step 5. You will only have to edit the level1 files in:<br>
+`...\Counter-Strike Global Offensive\csgo\cfg\customize\` <br>
+Type **helpresources** in game console to get help.<br>
+You will only have level1 features at your disposal, but you can enable higher levels in:
+**`level1_configsettings.cfg`** 
  
 The most important config files are:
 
-* **`level1_bindstatic.cfg`** - Using **dynamic binds** or `mode_[?]` from this config**?** Put your static binds here. 
+* **`level1_bindstatic.cfg`** - Put your static (normal) binds here. 
 * **`level1_configsettings.cfg`** - Setting related to this config can be changed in here.
 * **`level1_gamesettings.cfg`** - Here you put all the stuff that normally would be in the autoexec.cfg
-It's important to do this to be able to update easily. 
+It's important to do this to be able to update/backup easily. 
  
 For the rest check out the files in the preconfigured folder, they are commented:
- `...\Counter-Strike Global Offensive\csgo\cfg\customize\preconfigured\` 
+ `...\Counter-Strike Global Offensive\csgo\cfg\customize\preconfigured_german\` 
 
 **Modes** (`mode_default`; `mode_demo`; `mode_training`) are ment to change your configuration (especially binds) optimized for the different ways you use the game (normal play, overwatch/demo, training) <br>
 **Dynamic binds** are there to allow you multiple uses of one key. (As long as a modifier key (for me: ALT) is pressed key binds will change to something else.<br>
-**Variable binds** are there to toggle the bind of one key to something else with another key. 
+**Variable binds** are there to toggle the bind of one key to something else with another key. <br>
+**Static binds** are the "normal" binds one key performs one (or multiple) actions. <br>
 
 ---------
 
 There are different levels of configuration:<br>
 * level1 - game setting, config settings, static key binds<br>
-* level2 - advanced game settings (crosshair, radar)<br>
+* level2 - advanced game settings (crosshair, radar, viewmodel)<br>
 * level3 - dynamic key binds<br>
 * level4 - low level config changes (radar zoom, crosshair nade)<br>
 * level5 - high level conifg changes<br>
@@ -103,7 +108,7 @@ There are different levels of configuration:<br>
 * levelB - `mode_[?]` dynamic key binds<br>
 * levelC - `mode_[?]` configuration <br>
  
-To explain how the dynamic binds and the `mode_[?]` system in this config works i made this diagram:            
+To explain how the dynamic binds and the `mode_[?]` system in this config works I made this diagram:            
                                                                                                                     
       ╔═════════════╗                                                                                               
       ║ Start CS:GO ║▒                                                                                              
@@ -115,14 +120,13 @@ To explain how the dynamic binds and the `mode_[?]` system in this config works 
         └───┬──────────┘                                                                                            
           ┌─┴──────────────────────────────┐                                                                        
           │ balefire/resources.cfg         │                                                                        
-          │ customize/level5_resources.cfg │                                                                        
-          └─┬──────────────────────────────┘                                                                        
-          ┌─┴───────────────────────────────────┐                                                                   
-          │ customize/level1_gamesettings.cfg   │                                                                   
-          │ customize/level1_configsettings.cfg │                                                                   
-          │ customize/level1_bindstatic.cfg     │                                                                   
-          └─┬───────────────────────────────────┘                                                                   
-          ┌─┘               ╔══════════════╗  ┌───────────────────────────────────┐                                 
+          └───┬────────────────────────────┘                                                                        
+            ┌─┴───────────────────────────────────┐                                                                   
+            │ customize/level5_resources.cfg      │                                                                        
+            │ customize/level1_configsettings.cfg │                                                                   
+            │ customize/level1_gamesettings.cfg   │                                                                   
+            └─┬───────────────────────────────────┘                                                                   
+          ┌───┘             ╔══════════════╗  ┌───────────────────────────────────┐                                 
           │               ┌─╢ ALT pressed  ╟──┤ customize/level3_+binddynamic.cfg │                                 
         ╔═╧════════════╗  │ ║(+binddynamic)║  └───────────────────────────────────┘                                 
         ║ mode_default ╟──┤ ╚══════════════╝                                                                        
