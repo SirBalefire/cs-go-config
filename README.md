@@ -12,12 +12,12 @@
                              | (__  \__ \  _  | (_ | | (_) |                          
                               \___| |___/ (_)  \___|  \___/                           
                                                                                       
-                                     _           __   _                               
-                          __   ___  (_)  _ _    / _| (_)  __ _                        
-                         / _| / _ \ | | | ' \  |  _| | | / _` |                       
-                         \__| \___/ |_| |_||_| |_|   |_| \__, |                       
-                                                         |___/                        
-                                                                                      
+                                              __   _                               
+                            __   ___  _ _    / _| (_)  __ _                        
+                           / _| / _ \ | ' \  |  _| | | / _` |                       
+                           \__| \___/ |_||_| |_|   |_| \__, |                       
+                                                   |___/                        
+                                                                                
 You need a **monospaced font** to show this config correctly. If you you use windows choose: "Consolas".<br>
  **Disable line breaks** in your editor.<br> 
 I highly recommend using an editor which supports text highlighting.<br> 
